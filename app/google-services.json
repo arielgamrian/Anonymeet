@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "517635666178",
+    "firebase_url": "https://anonymeet-eb93b.firebaseio.com",
+    "project_id": "anonymeet-eb93b",
+    "storage_bucket": "anonymeet-eb93b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:517635666178:android:160f000e1cd88307",
+        "android_client_info": {
+          "package_name": "com.example.gamrian.anonymeet"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "517635666178-accoksfqi6pilfofaugmmv515ci52n1j.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.gamrian.anonymeet",
+            "certificate_hash": "7878bfc4ecdaa4703064af39ba2a4b8d4d7495ad"
+          }
+        },
+        {
+          "client_id": "517635666178-cd3402j3r4nf68213cbmjh9uh77chuqn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBtvf_pddPrpDK_8Z3lJl1rSz398BAZPkg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "517635666178-cd3402j3r4nf68213cbmjh9uh77chuqn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

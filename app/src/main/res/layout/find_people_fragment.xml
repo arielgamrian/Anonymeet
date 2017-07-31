@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="ltr">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <Switch
+                android:layout_marginLeft="18dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Show myself   "
+                android:id="@+id/visible_switch"
+                android:textStyle="bold|italic" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="1000"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:id="@+id/distance"/>
+
+            <SeekBar
+                android:id="@+id/seekBar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:max="5000"
+                android:layout_gravity="center_vertical"/>
+
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:id="@+id/peopleList"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:layout_margin="15dp"
+            android:text=""
+            android:textColor="@android:color/secondary_text_light"
+            android:layout_gravity="center"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:id="@+id/noUsers_text"
+            android:alpha="0.8"
+            android:visibility="gone"
+            android:onClick="enableLocationServices"
+            />
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/refresh_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:padding="12dp"
+        android:background="@drawable/refresh_button"
+        android:src="@drawable/ic_refresh"
+        android:elevation="16dp"
+        android:layout_marginBottom="36dp"/>
+
+
+</RelativeLayout>

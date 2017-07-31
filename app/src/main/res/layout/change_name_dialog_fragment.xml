@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@android:color/transparent"
+    android:gravity="center"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <EditText
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:background="@drawable/rectangle"
+        android:backgroundTint="@color/colorAccent"
+        android:paddingTop="30dp"
+        android:paddingBottom="30dp"
+        android:textSize="20sp"
+        android:paddingRight="15dp"
+        android:paddingLeft="15dp"
+        android:gravity="center"
+        android:hint="New name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:divider="@drawable/vertical_divider"
+        android:dividerPadding="5dp"
+        android:orientation="horizontal"
+        android:showDividers="middle"
+        android:weightSum="2">
+
+        <TextView
+            android:id="@+id/cancel_change_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/rectangle"
+            android:backgroundTint="@color/colorPrimary"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="Cancel"
+            android:textColor="@color/white" />
+
+
+        <TextView
+            android:id="@+id/change_name_confirm"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/rectangle"
+            android:backgroundTint="@color/colorPrimary"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="Change"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+</LinearLayout>

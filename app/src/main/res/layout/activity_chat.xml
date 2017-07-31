@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="#f2f2f2"
+    android:layoutDirection="ltr"
+    tools:context="com.Tapp.Anonymeet1.FireBaseChat.ChatActivity">
+
+    <RelativeLayout
+        android:gravity="center_vertical"
+        android:id="@+id/chat_title_layout"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <TextView
+            android:id="@+id/chat_user_title"
+            android:layout_marginLeft="50dp"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:text="User1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/chat_title_age"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/white"
+            android:text="Age: 18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <TextView
+            android:id="@+id/chat_title_gender"
+            android:gravity="center"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/chat_title_age"
+            android:textColor="@color/white"
+            android:text="Male/Female"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+    <ImageButton
+        android:src="@android:drawable/ic_menu_send"
+        android:onClick="onClick"
+        style="@style/Base.Widget.AppCompat.Button.Borderless"
+        android:id="@+id/send"
+        android:scaleType="fitXY"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true" />
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:scaleType="fitXY"
+        android:id="@+id/read"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/not_arrived"
+        android:layout_above="@+id/send"
+        android:visibility="invisible"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+
+
+    <android.support.v7.widget.RecyclerView
+
+        android:layout_marginTop="15dp"
+        android:id="@+id/chatList"
+        android:layout_below="@id/chat_title_layout"
+        android:layout_above="@id/read"
+        android:layout_marginBottom="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+
+
+    <EditText
+        android:id="@+id/sendMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@+id/send"
+ />
+
+
+
+</RelativeLayout>

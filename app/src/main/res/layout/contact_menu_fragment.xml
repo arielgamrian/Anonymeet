@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/colorPrimary"
+    android:id="@+id/cancel_button"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:scaleType="fitXY"
+        android:id="@+id/cancel_contact_menu"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="7.5dp"
+        android:layout_marginLeft="7.5dp"
+        android:layout_weight="0.6"
+        android:src="@drawable/cancel"
+        android:layout_centerVertical="true"
+        android:tint="@color/white"
+        android:layout_width="40dp"
+        android:layout_height="40dp" />
+
+<LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:weightSum="2"
+    android:divider="@drawable/vertical_divider"
+    android:showDividers="middle"
+    android:background="@color/colorAccent"
+    android:layout_height="wrap_content"
+    android:layout_toLeftOf="@id/cancel_contact_menu"
+    android:layout_alignParentLeft="true"
+    >
+
+    <RelativeLayout
+        android:id="@+id/change_name_button"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:padding="10dp">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/edit"
+            android:tint="@color/white" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/delete_contact_button"
+        android:padding="10dp"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:scaleType="fitXY"
+            android:src="@drawable/delete"
+            android:background="@drawable/alert"
+            android:tint="@color/white"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>
+
+
+
+
+
+</RelativeLayout>

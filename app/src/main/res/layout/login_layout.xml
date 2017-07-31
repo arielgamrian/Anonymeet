@@ -1,0 +1,85 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:gravity="center_horizontal"
+              android:orientation="vertical"
+              tools:context="com.Tapp.Anonymeet1.GPS.LoginActivity"
+              android:layoutDirection="ltr">
+
+    <include
+        layout="@layout/toolbar_layout"
+        android:id="@+id/toolBar1"
+        />
+
+    <ProgressBar
+        android:id="@+id/login_progress"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:visibility="gone"
+        android:layout_marginTop="250dp"/>
+
+        <EditText
+            android:layout_margin="15dp"
+            android:padding="20dp"
+            android:id="@+id/nickname"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:hint="Nickname"
+            android:textSize="25sp"
+            android:inputType="text"
+            android:maxLines="1"
+            android:background="@drawable/edit_text"
+            android:layout_above="@+id/password"
+            android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_margin="15dp"
+        android:padding="20dp"
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:hint="Password"
+        android:textSize="25sp"
+        android:inputType="textPassword"
+        android:maxLines="1"
+        android:background="@drawable/edit_text"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/login_button"
+        android:onClick="attemptLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/password"
+        android:layout_alignLeft="@id/nickname"
+        android:background="@drawable/ripple_button"
+        android:text="Anonymeet"
+        android:textSize="17sp"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="10dp"
+        android:elevation="50dp"
+        />
+
+    <Button
+        android:id="@+id/new_user_button"
+        android:onClick="signUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/password"
+        android:layout_alignRight="@id/nickname"
+        android:background="@drawable/ripple_button"
+        android:text="New user? Sign up!"
+        android:textSize="12sp"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="10dp"
+        android:elevation="50dp"
+        android:alpha="0.6"
+        />
+
+</RelativeLayout>
